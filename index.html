@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divan.site</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="granim.min.js"></script>
+    <link rel="shortcut icon" href="МОЙ ЛУЧШИЙ ЛОГОТИП.png">
+    <meta type="keywords" content="divan,team,games,metalslayer,nft">
+    <meta type="description" content="Сайт divan.team">
+</head>
+<body id="top">
+    <canvas id="gradient"></canvas>
+    <div  class="white">
+        <p>Как тебе наш сайт?</p>
+        <p>Оцени от 1 до 10</p>
+    </div>
+    <script>
+        var granimInstance = new Granim({
+        element: '#gradient',
+        direction: 'top-bottom',
+        isPausedWhenNotInView: true,
+        states : {
+            "default-state": {
+                gradients: [
+                    ['#ff9966', '#ff5e62'],
+                    ['#00F260', '#0575E6'],
+                    ['#e1eec3', '#f05053']
+                ]
+            }
+        }
+    });
+    </script>
+</body>
+</html>
